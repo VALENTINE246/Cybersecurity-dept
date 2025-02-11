@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSA web</title>
+  <link rel="stylesheet" href="CSS/Home..css">
+  <link rel="stylesheet" href="CSS/MediaQuery.css">
+  <link rel="stylesheet" href="CSS/Pictures.css">
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="left-header">
+      <img src="Images/Logo.png" width="50px">
+      <a href="CSA-home.html">CSD</a>
+    </div>
+
+    <div class="right-header">
+      <div class="navs">
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">About us</a>
+        <a href="">Events</a>
+      </div>
+      <box-icon class="toggle-btn" id="toggle-btn" name='menu' color='#f3ecec' ></box-icon>
+    </div>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-ts">
+      <div class="s-ts-name">
+        <div>
+          <img src="Images/Logo.png" width="40px">
+          <a href="CSA-home.html">CSD</a>
+        </div>
+        <box-icon id="close-btn" color="white" name='x'></box-icon>
+      </div>
+
+      <div class="l-ts">
+        <p>Somto Ifeduba</p>
+        <a href="">My Account</a>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+      <a href="CSA-home.html" class="home">
+        <box-icon color="white" size="18px" name='home-alt-2'></box-icon>
+        Home
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='news'></box-icon>
+        News
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='detail'></box-icon>
+        About us
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='calendar-event'></box-icon>
+        Events
+      </a>
+      <a href="" class="home">
+        <box-icon type='solid' name='briefcase' color="white" size="18px"></box-icon>
+        Bussiness
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='log-out'></box-icon>
+        Log out
+      </a>
+    </div>
+    <button class="login-stick"> <box-icon name='log-in'></box-icon> Login</button>
+  </div>
+  <script src="Scripts/sidebar.js"></script>
+
+  <section class="hero-section">
+    <marquee class="scroll" behavior="" direction="right">Welcome to Cybersecurity Student Website, explore amazing contents</marquee>
+    
+  <div class="hero-bg">
+
+  </div>
+
+  <div class="hero-bg-l">
+
+  </div>
+
+  <div class="h-content-r">
+    <h1 class="w-t">Welcome <br>to Cyber Security <br> Department Unizik</h1>
+    <p>Empowering tomorrow's Cybersecurity Professionals.</p>
+
+    <button> <box-icon name='mail-send'></box-icon> Contact us</button>
+    <script>
+      const mediaQuery = window.matchMedia("(max-width: 650px)")
+
+      if(mediaQuery.matches) {
+        const welcomeText = document.querySelector(".w-t");
+        welcomeText.textContent = "Welcome to Cyber Security Department Unizik"
+      }
+    </script>
+  </div>
+
+  <div class="h-content-l">
+  </div>
+  </section>
+
+  <section class="lower-grid">
+    <div class="lg-h">
+      <h1>Our Students</h1>
+      <p>Meet some of our Students</p>
+      <div class="grid">
+        <div class="card card1">
+          <div class="details">
+            <h2>Somto Ifeduba .K</h2>
+            <p>Web Designer</p>
+          </div>
+        </div>
+
+        <div class="card card2">
+          <div class="details">
+            <h2>Loading---</h2>
+            <p>Course Rep</p>
+          </div>
+        </div>
+        
+        <div id="last" class="card card3">
+          <div class="details">
+            <h2>Loading---</h2>
+            <p>Asst Course Rep</p>
+          </div>
+        </div>
+      </div>
+      <a href="#last" class="arrow">
+        Scroll
+        <box-icon name='right-arrow-alt' color="white" size="30px"></box-icon>
+      </a>
+    </div>
+  </section>
+</body>
+</html>
