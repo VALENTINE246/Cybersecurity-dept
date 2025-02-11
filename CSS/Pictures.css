@@ -4,3 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.card4 {
+  background-image: url(/Images/uchenna.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
