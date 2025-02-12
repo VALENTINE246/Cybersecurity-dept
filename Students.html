@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSA web</title>
+  <link rel="stylesheet" href="CSS/Pictures.css">
+  <link rel="stylesheet" href="CSS/Students.css">
+  <link rel="stylesheet" href="CSS/Header.css">
+  <link rel="stylesheet" href="CSS/Sidebar.css">
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="left-header">
+      <img src="Images/Logo.png" width="50px">
+      <a class="csd" href="CSA-home.html">CSD</a>
+    </div>
+
+    <div class="right-header">
+      <div class="navs">
+        <a href="">Home</a>
+        <a href="">News</a>
+        <a href="">About us</a>
+        <a href="">Events</a>
+      </div>
+      <box-icon class="toggle-btn" id="toggle-btn" name='menu' color='#f3ecec' ></box-icon>
+    </div>
+  </header>
+
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-ts">
+      <div class="s-ts-name">
+        <div>
+          <img src="Images/Logo.png" width="40px">
+          <a href="CSA-home.html">CSD</a>
+        </div>
+        <box-icon id="close-btn" color="white" name='x'></box-icon>
+      </div>
+
+      <div class="l-ts">
+        <p>Login to continue</p>
+        <a href="">My Account</a>
+      </div>
+    </div>
+    <div class="sidebar-nav">
+      <a href="CSA-home.html" class="home">
+        <box-icon color="white" size="18px" name='home-alt-2'></box-icon>
+        Home
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='news'></box-icon>
+        News
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='detail'></box-icon>
+        About us
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='calendar-event'></box-icon>
+        Events
+      </a>
+      <a href="" class="home">
+        <box-icon type='solid' name='briefcase' color="white" size="18px"></box-icon>
+        Bussiness
+      </a>
+      <a href="" class="home">
+        <box-icon color="white" size="18px" name='log-out'></box-icon>
+        Log out
+      </a>
+    </div>
+    <button class="login-stick"> <box-icon name='log-in'></box-icon> Login</button>
+  </div>
+  <script src="Scripts/sidebar.js"></script>
+
+  <div class="wrap">
+   <h1> Our Students</h1>
+  </div>
+      <div class="wrap-grid" id="grid">
+
+        <div class="card card1" id="card1" title="click to show details">
+          <div class="details">
+            <h2>Somto Ifeduba .K</h2>
+            <p>Web Designer</p>
+          </div>
+        </div>
+
+
+        <div class="card card2" id="card2" title="click to show details">
+          <div class="details">
+            <h2>Loading---</h2>
+            <p>Course Rep</p>
+          </div>
+        </div>
+        
+        <div class="card card3" id="card3" title="click to show detals">
+          <div class="details">
+            <h2>Loading---</h2>
+            <p>Asst Course Rep</p>
+          </div>
+        </div>
+        
+        <div class="card card4" id="card4" title="click to show details">
+          <div class="details">
+            <h2>Odibendi Uchenna</h2>
+            <p>Frontend Developer</p>
+          </div>
+        </div>
+
+        <div id="card5" class="card card5">
+          <div class="details">
+            <h2>Nwabufo Vincent</h2>
+            <p>Student</p>
+          </div>
+        </div>
+
+        <div id="card6" class="card card6">
+          <div class="details">
+            <h2 id="name1"></h2>
+            <p id="status1"></p>
+          </div>
+        </div>
+
+
+      </div>
+
+      </div>
+      
+
+    </div>
+    </div>
+  </section>
+  <script src="Scripts/students.js"></script>
+
+  <div class=" card-p card1-p" id="card1-p">
+    <div class="top-h">
+      <button class="close" id="close-card1">
+        <box-icon name='x' color='#414141' ></box-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class=" card-p card2-p" id="card2-p">
+  </div>
+
+  <div class=" card-p card3-p" id="card3-p">
+  </div>
+
+
+  <script src="Scripts/names.js"></script>
+</body>
+</html>
