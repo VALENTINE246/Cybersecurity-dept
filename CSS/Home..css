@@ -82,7 +82,7 @@ section {
   width: 100%;
   text-align: left;
   margin: 0px;
-  color: orange;
+  font-weight: bold;
 }
 .hero-section p {
   color: white;
