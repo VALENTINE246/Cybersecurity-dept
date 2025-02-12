@@ -232,6 +232,7 @@ button:active {
   border-radius: 100%;
   display: inline-block;
   margin-right: 30px;
+  margin-left: 10px;
   position: relative;
   transition: 0.15s all ease-in-out;
 }
