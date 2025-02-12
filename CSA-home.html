@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="CSS/Home..css">
   <link rel="stylesheet" href="CSS/MediaQuery.css">
   <link rel="stylesheet" href="CSS/Pictures.css">
+  <link rel="stylesheet" href="CSS/Header.css">
+  <link rel="stylesheet" href="CSS/Sidebar.css">
   <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
@@ -105,11 +107,27 @@
 
   <section class="lower-grid">
     <div class="lg-h">
-      <h1>Our Students</h1>
-      <p>Meet some of our Students</p>
-      <div class="grid">
+      <div class="lg-h-sec">
+        <div>
+          <h1>Our Students</h1>
+          <p>Meet some of our Students</p>
+        </div>
+        <div id="more" class="more" title="More">
+            <box-icon id="more" name='chevron-down' color='#ffffff' ></box-icon>
+        </div>
+      </div>
 
-        <div class="card card1">
+      <script>
+        function movetoPage () {
+          window.location.href = "Students.html"
+        }
+        const moveOut = document.getElementById('more').addEventListener('click', () => {
+          movetoPage()
+        })
+      </script>
+      <div class="grid" id="grid">
+
+        <div class="card card1s">
           <div class="details">
             <h2>Somto Ifeduba .K</h2>
             <p>Web Designer</p>
@@ -155,6 +173,12 @@
         Scroll
         <box-icon name='right-arrow-alt' color="white" size="30px"></box-icon>
       </a>
+    </div>
+  </section>
+
+  <section class="lower-body">
+    <div class="n-s">
+      <h1>Latest News Post</h1>
     </div>
   </section>
 </body>
