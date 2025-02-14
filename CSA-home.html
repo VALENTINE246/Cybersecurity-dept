@@ -9,10 +9,23 @@
   <link rel="stylesheet" href="CSS/Pictures.css">
   <link rel="stylesheet" href="CSS/Header.css">
   <link rel="stylesheet" href="CSS/Sidebar.css">
+  <link rel="stylesheet" href="CSS/loader.css">
   <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </head>
 <body>
+  <div class="frontpage" id="frontpage">
+    <span class="loader1" id="loader1"></span>
+  </div>
+
+  <script>
+    window.onload = () => {
+      setTimeout(function () {
+        const front = document.getElementById('frontpage')
+        front.style.display = 'none'
+      },3000)
+    }
+  </script>
   <header class="header">
     <div class="left-header">
       <img src="Images/Logo.png" width="50px">
@@ -26,7 +39,9 @@
         <a href="">About us</a>
         <a href="">Events</a>
       </div>
+    <div class="toggle-div">
       <box-icon class="toggle-btn" id="toggle-btn" name='menu' color='#f3ecec' ></box-icon>
+    </div>  
     </div>
   </header>
 
@@ -75,42 +90,47 @@
   </div>
   <script src="Scripts/sidebar.js"></script>
 
-  <section class="hero-section">
-    <marquee class="scroll" behavior="" direction="right">Welcome to Cybersecurity Student Website, explore amazing contents</marquee>
-    
-  <div class="hero-bg">
+<div class="video-background">
+  <video autoplay muted loop id="bg-video">
+      <source src="Images/3141210-uhd_3840_2160_25fps.mp4.crdownload" type="video/mp4">
+  </video>
+  <div class="content">
+    <div class="left-content">
+      <marquee class="marq" behavior="" direction="right">Welcome to our departmental website, explore amazing contents</marquee>
+      <h1>Welcome to CyberSecurity Department</h1>
+      <p>Protecting the intergrity of the web is our goal.</p>
+      <button class="contact-us">Contact us</button>
+    </div>
 
+    <div class="right-content">
+      <img class="zoom-image" src="Images/Logo.png" width="400px">
+    </div>
+  </div>
+</div>
+
+<section class="address">
+  <div class="web-name">
+    <img src="Images/Logo.png" width="55px">
+    <h3>
+    Cyber-Security Department
+    </h3>
   </div>
 
-  <div class="hero-bg-l">
-
+  <div class="uni">
+    <img src="Images/unizik logo.jfif" width="40px">
+    <a href="www.unizik.com">Nnamdi Azikiwe University Anambra State Awka.</a>
   </div>
 
-  <div class="h-content-r">
-    <h1 class="w-t">Welcome <br>to Cyber Security <br> Department Unizik</h1>
-    <p>Empowering tomorrow's Cybersecurity Professionals.</p>
+</section>
 
-    <button> <box-icon name='mail-send'></box-icon> Contact us</button>
-    <script>
-      const mediaQuery = window.matchMedia("(max-width: 650px)")
-
-      if(mediaQuery.matches) {
-        const welcomeText = document.querySelector(".w-t");
-        welcomeText.textContent = "Welcome to Cyber Security Department Unizik"
-      }
-    </script>
-  </div>
-
-  <div class="h-content-l">
-  </div>
-  </section>
+  <script src="Scripts/home.js"></script>
 
   <section class="lower-grid">
     <div class="lg-h">
       <div class="lg-h-sec">
         <div>
-          <h1>Our Students</h1>
-          <p>Meet some of our Students</p>
+          <h1 class="w-h">Our Students</h1>
+          <p class="w-p">Meet some of our Students</p>
         </div>
         <div id="more" class="more" title="More">
             <box-icon id="more" name='chevron-down' color='#ffffff' ></box-icon>
@@ -162,6 +182,14 @@
           </div>
         </div>
 
+        
+        <div id="last" class="card card6">
+          <div class="details">
+            <h2></h2>
+            <p></p>
+          </div>
+        </div>
+
 
       </div>
 
@@ -170,7 +198,6 @@
 
     </div>
       <a href="#last" class="arrow">
-        Scroll
         <box-icon name='right-arrow-alt' color="white" size="30px"></box-icon>
       </a>
     </div>
@@ -178,8 +205,51 @@
 
   <section class="lower-body">
     <div class="n-s">
-      <h1>Latest News Post</h1>
+      <h1>Latest News</h1>
+      <box-icon name='chevron-right' size="35px" color='#ffffff' ></box-icon>
+    </div>
+
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="img-sec1">
+          <img src="Images/unizik.jfif">
+        </div>
+        <div class="text-area">
+          <h3>Unizik  new school gate at Dynamo Juction</h3>
+          <p>This is to inform all students that the ifite school gate entrace has been moved to Dynamo Junction</p>
+          <a>Read more</a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <div class="img-sec1">
+          <img src="Images/sui.jpg" alt="">
+        </div>
+        <div class="text-area">
+          <h3>SUI MEETUP WILL BE LIVE IN UNIZIK</h3>
+          <p>Whether you are a devloper, Investor, ore simply curious about the blockchain and the opportunities within</p>
+          <a>Read more  <box-icon id="more" name='chevron-right' color='black' ></box-icon></a>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <div class="img-sec1">
+          <img src="Images/sl.jpg" alt="">
+        </div>
+        <div class="text-area">
+          <h3>SUI MEETUP WILL BE LIVE IN UNIZIK</h3>
+          <p>Whether you are a devloper, Investor, ore simply curious about the blockchain and the opportunities within</p>
+          <a>Read more 
+            <box-icon id="more" name='chevron-right' color='black' ></box-icon>
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
+
+  <footer class="footer">
+
+  </footer>
 </body>
 </html>
