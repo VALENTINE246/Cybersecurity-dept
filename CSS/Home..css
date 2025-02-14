@@ -349,7 +349,6 @@ button:active {
   align-items: center;
 }
 .news-card {
-  background-color: white;
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -382,7 +381,7 @@ button:active {
   padding: 8px 20px;
 }
 .text-area h3 {
-  color: var(--text-black);
+  color: white;
   margin: 0px;
   margin-top: 4px;
   font-size: 14.5px;
@@ -391,7 +390,7 @@ button:active {
 .text-area p {
   margin: 0px;
   font-size: 12.5px;
-  color: var(--text-black);
+  color: white;
   width: 100%;
   text-align: center;
   font-weight: bold;
