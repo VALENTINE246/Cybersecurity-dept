@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: fit-content;
+  background-color:  #011e2e;
 }
 :root {
   --text-black: #302f2f;
