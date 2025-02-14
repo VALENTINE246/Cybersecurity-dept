@@ -22,7 +22,7 @@ section {
 }
 
 .wrap {
-  margin-top: 80px;
+  margin-top: 110px;
   background-color: #011e2e;
   width: 100%;
   height: 100px;
@@ -126,6 +126,7 @@ section {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-top: 80px;
   }
   .card {
     margin: 0px;
