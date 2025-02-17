@@ -81,12 +81,20 @@
         <box-icon type='solid' name='briefcase' color="white" size="18px"></box-icon>
         Bussiness
       </a>
-      <a href="Login.html" class="home">
+      <a href="" class="home">
         <box-icon color="white" size="18px" name='log-out'></box-icon>
         Log out
       </a>
     </div>
-    <button class="login-stick"> <box-icon name='log-in'></box-icon> Login</button>
+    <button class="login-stick" id="login-stick"> <box-icon name='log-in'></box-icon> Login</button>
+    <script>
+      const loginMove = document.getElementById('login-stick').addEventListener('click', () => {
+        function moveToLogin () {
+          window.location.href = 'Login.html';
+        }
+        moveToLogin()
+      })
+    </script>
   </div>
   <script src="Scripts/sidebar.js"></script>
 
