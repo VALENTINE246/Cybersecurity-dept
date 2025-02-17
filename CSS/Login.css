@@ -9,10 +9,10 @@ body {
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  margin-top: 110px;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #bfbfbf;
 }
 :root {
   --bg-: #011e2e;
@@ -23,11 +23,60 @@ body {
 
 form {
   display: flex;
-  padding: 20px;
+  padding: 50px 30px;
   box-sizing: border-box;
   width: fit-content;
-  height: 300px;
+  height: fit-content;
   background-color: var(--bg-);
   flex-direction: column;
   align-items: center;
+  border-radius: 20px;
+}
+.email-wrap, .password-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  position: relative;
+}
+.email-log, .password-log {
+  width: 300px;
+  padding: 0px 30px;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  margin-top: 10px;
+}
+.img-at {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  transform: translate(-50%);
+  width: 15px;
+}
+.log {
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: orange;
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+  letter-spacing: 1px;
+}
+.log-intro {
+  color: white;
+  margin: 0px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
