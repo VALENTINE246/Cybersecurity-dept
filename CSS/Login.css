@@ -28,4 +28,6 @@ form {
   width: fit-content;
   height: 300px;
   background-color: var(--bg-);
+  flex-direction: column;
+  align-items: center;
 }
