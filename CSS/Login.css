@@ -108,6 +108,7 @@ form {
   color: var(--text-black);
   letter-spacing: 1px;
   cursor: pointer;
+  border: 1px solid white;
 }
 input::placeholder {
   color: white;

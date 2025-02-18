@@ -100,6 +100,9 @@ section {
   color: white;
   border-radius: 20px;
   width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .address {
   height: 150px;

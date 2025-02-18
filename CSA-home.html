@@ -56,7 +56,7 @@
       </div>
 
       <div class="l-ts">
-        <p>Login to continue</p>
+        <p id="login-stick">Login to continue</p>
         <a href="">My Account</a>
       </div>
     </div>
@@ -86,7 +86,6 @@
         Log out
       </a>
     </div>
-    <button class="login-stick" id="login-stick"> <box-icon name='log-in'></box-icon> Login</button>
     <script>
       const loginMove = document.getElementById('login-stick').addEventListener('click', () => {
         function moveToLogin () {
@@ -107,7 +106,7 @@
       <marquee class="marq" behavior="" direction="right">Welcome to our departmental website, explore amazing contents</marquee>
       <h1>Welcome to CyberSecurity Department</h1>
       <p>Protecting the intergrity of the web is our goal.</p>
-      <button class="contact-us">Contact us</button>
+      <button class="contact-us"> <box-icon color="white" name='briefcase'></box-icon> Contact us</button>
     </div>
 
     <div class="right-content">
