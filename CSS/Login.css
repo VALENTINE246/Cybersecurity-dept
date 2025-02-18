@@ -102,7 +102,7 @@ form {
   display: flex;
   align-items: center;
   border: none;
-  background-color: #d0d8dc;
+  background-color: white;
   font-weight: bold;
   margin-top: 20px;
   color: var(--text-black);
