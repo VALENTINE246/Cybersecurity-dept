@@ -148,6 +148,10 @@ input:focus {
 }
 
 @media (max-width: 335px) {
+  .r-f {
+    display: flex;
+    align-items: center;
+  }
   .r-f p, .r-f a  {
     font-size: 10px;
   }
