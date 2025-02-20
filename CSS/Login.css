@@ -37,9 +37,22 @@ form {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
-.email-wrap, .password-wrap {
+.move-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+.input-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +61,7 @@ form {
   display: flex;
   position: relative;
 }
-.email-log, .password-log {
+.inputs {
   width: 300px;
   padding: 0px 30px;
   height: 40px;
@@ -145,10 +158,6 @@ input:focus {
   }
   .email-log, .password-log {
     width: 100%;
-  }
-  .r-f {
-    display: flex;
-    align-items: center;
   }
 }
 
