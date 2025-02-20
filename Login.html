@@ -10,18 +10,19 @@
 </head>
 <body>
   <form action="submit" id="login-form">
+    <a title="Back" class="move-back" href="CSA-home.html"><box-icon name='arrow-back' color="white"></box-icon></a>
     <h2 class="log-intro">
       Login to CSD 
   </h2>
-    <div class="email-wrap">
+    <div class="input-wrap">
       <box-icon class="img-at" name='envelope' type='solid' color='white' ></box-icon>
-      <input class="email-log" type="text" id="log-email" placeholder="Email" required>
+      <input class="inputs" type="text" id="log-email" placeholder="Email" required>
     </div>
     <br>
 
-    <div class="password-wrap">
+    <div class="input-wrap">
       <box-icon class="img-at" type="solid" name='lock' color='white' ></box-icon>
-      <input class="password-log" type="text" name="" id="" placeholder="Password" required>
+      <input class="inputs" type="password" id="log-password" placeholder="Password" required>
     </div>
     <br>
     <div class="r-f">
@@ -30,9 +31,27 @@
       <p>Forget password?</p>
     </div>
 
-    <input class="log" type="button" value="Login">
+    <input class="log" type="submit" value="Login">
 
     <p class="reg">Don't have an account? <a href="Register.html">Register</a></p>
   </form>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {  
+      event.preventDefault(); 
+
+      const email = document.getElementById('log-email').value;  
+      const password = document.getElementById('log-password').value;  
+  
+      const storedUser = JSON.parse(localStorage.getItem('user'));  
+
+      if (storedUser && storedUser.email === email && storedUser.password === password) {  
+          alert('Login successful!');
+          window.location.href = "CSA-home.html";
+      } else {  
+          alert('Invalid email or password. Please try again.');  
+      }  
+    });
+  </script>
 </body>
 </html>

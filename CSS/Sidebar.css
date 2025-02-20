@@ -46,7 +46,15 @@
   font-weight: bold;
   font-size: 18px;
 }
-.l-ts a {
+.login-acc {
+  color: white;
+  font-weight: bold;
+  transition: 0.15s all ease-in-out;
+}
+.login-acc:hover {
+  text-decoration: underline;
+}
+.my-acc {
   color: orange;
   font-size: 14px;
   margin-top: 5px;

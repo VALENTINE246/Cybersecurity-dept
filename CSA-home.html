@@ -56,8 +56,8 @@
       </div>
 
       <div class="l-ts">
-        <p id="login-stick">Login to continue</p>
-        <a href="">My Account</a>
+        <a id="login-stick" class="login-acc" href="Login.html" >Login to continue</a>
+        <a class="my-acc" href="">My Account</a>
       </div>
     </div>
     <div class="sidebar-nav">
@@ -86,14 +86,6 @@
         Log out
       </a>
     </div>
-    <script>
-      const loginMove = document.getElementById('login-stick').addEventListener('click', () => {
-        function moveToLogin () {
-          window.location.href = 'Login.html';
-        }
-        moveToLogin()
-      })
-    </script>
   </div>
   <script src="Scripts/sidebar.js"></script>
 

@@ -146,6 +146,10 @@ input:focus {
   .email-log, .password-log {
     width: 100%;
   }
+  .r-f {
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media (max-width: 335px) {

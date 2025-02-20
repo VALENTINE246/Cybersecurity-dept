@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register </title>
+  <link rel="stylesheet" href="CSS/Login.css">
+  <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+  <form action="submit" id="signup-form">
+    <a title="Back" class="move-back" href="CSA-home.html"><box-icon name='arrow-back' color="white"></box-icon></a>
+    <h2 class="log-intro">
+      Sign Up
+  </h2>
+  <div class="input-wrap">
+    <box-icon class="img-at" type="solid" name='user-circle' color='white' ></box-icon>
+    <input class="inputs" type="text" name="" id="reg-full-name" placeholder="Full name" required>
+  </div>
+  <br>
+    <div class="input-wrap">
+      <box-icon class="img-at" name='envelope' type='solid' color='white' ></box-icon>
+      <input class="inputs" type="text" id="reg-email" placeholder="Email" required>
+    </div>
+    <br>
+
+    <div class="input-wrap">
+      <box-icon class="img-at" type="solid" name='phone-call' color='white' ></box-icon>
+      <input class="inputs" type="text" id="reg-number" placeholder="Phone number" required>
+    </div>
+    <br>
+
+    <div class="input-wrap">
+      <box-icon class="img-at" type="solid" name='lock' color='white' ></box-icon>
+      <input class="inputs" type="text" id="reg-password" placeholder="Password" required>
+    </div>
+    <br>
+
+    <div class="input-wrap">
+      <box-icon class="img-at" type="solid" name='lock' color='white' ></box-icon>
+      <input class="inputs" type="text" id="reg-password-rep" placeholder="Repeat Password" required>
+    </div>
+    <br>
+
+    <input class="log" type="submit" value="Sign up">
+
+    <p class="reg">Already have and account? <a href="Login.html">Login</a></p>
+  </form>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(event) {  
+    event.preventDefault(); // Prevent form submission  
+    // Get user details from the form  
+    const name = document.getElementById('reg-full-name').value;  
+    const email = document.getElementById('reg-email').value;  
+    const number = document.getElementById('reg-number').value;  
+    const password = document.getElementById('reg-password').value;  
+
+    // Create a user object  
+    const user = {  
+        name: name,  
+        email: email,  
+        number: number,  
+        password: password  
+    };  
+
+    // Save the user object in local storage  
+    localStorage.setItem('user', JSON.stringify(user));  
+
+    // Redirect to login page  
+    alert('Signup successful! You can now log in.');  
+    window.location.href = 'Login.html';  
+});
+  </script>
+</body>
+</html>
